@@ -7,9 +7,8 @@ import WhatsAppButton from './components/WhatsAppButton';
 import HomePage from './pages/HomePage';
 import ServicesPage from './pages/ServicesPage';
 import BookingPage from './pages/BookingPage';
-import CRMDashboard from './pages/CRMDashboard';
 import LoginPage from './pages/LoginPage';
-import AdminPage from './admin/AdminPage';
+import AdminDashboard from './admin/AdminDashboard';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuthStore();
@@ -31,18 +30,18 @@ function App() {
             <Route path="/booking" element={<BookingPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route
-              path="/crm"
+              path="/admin"
               element={
                 <ProtectedRoute>
-                  <CRMDashboard />
+                  <AdminDashboard />
                 </ProtectedRoute>
               }
             />
             <Route
-              path="/admin"
+              path="/crm"
               element={
                 <ProtectedRoute>
-                  <AdminPage />
+                  <AdminDashboard />
                 </ProtectedRoute>
               }
             />
