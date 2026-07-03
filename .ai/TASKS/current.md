@@ -6,31 +6,32 @@
 - [x] 初始化 Git 倉庫
 - [x] 創建 `.ai/RULES.md`, `.ai/MEMORY.md`, `.ai/TASKS/current.md`
 
-## Phase 2: 開發執行
-- [ ] 2.1 切換到 pnpm，更新 package.json
-- [ ] 2.2 創建 Cloudflare Pages Functions 後端（Hono + D1 + KV）
-- [ ] 2.3 設計 D1 數據庫 schema（clients, branches, orders, bookings）
-- [ ] 2.4 實作 CMS API（GET/PUT cms:data）
-- [ ] 2.5 實作 Auth API（login + JWT middleware）
-- [ ] 2.6 實作 CRM API（clients/orders CRUD）
-- [ ] 2.7 實作 Booking API（save + WhatsApp link）
-- [ ] 2.8 重構 HomePage 使用 CMS 數據
-- [ ] 2.9 重構 ServicesPage 使用 CMS 數據
-- [ ] 2.10 重構 Footer/Navbar 使用 CMS 數據
-- [ ] 2.11 創建 Admin 後台頁面（CMS 編輯 + 登入）
-- [ ] 2.12 重構 CRM Dashboard 接真實 API
-- [ ] 2.13 重構 BookingPage 接 WhatsApp
-- [ ] 2.14 配置 SPA routing（_routes.json）
-- [ ] 2.15 配置 wrangler.toml 與 GitHub Actions
+## Phase 2: 開發執行 ✅
+- [x] 2.1 切換到 pnpm，更新 package.json
+- [x] 2.2 創建 Cloudflare Pages Functions 後端（Hono + D1 + KV）
+- [x] 2.3 設計 D1 數據庫 schema（clients, branches, orders, bookings）
+- [x] 2.4 實作 CMS API（GET/PUT cms:data）
+- [x] 2.5 實作 Auth API（login + JWT middleware）
+- [x] 2.6 實作 CRM API（clients/orders CRUD）
+- [x] 2.7 實作 Booking API（save + WhatsApp link）
+- [x] 2.8 重構 HomePage 使用 CMS 數據
+- [x] 2.9 重構 ServicesPage 使用 CMS 數據
+- [x] 2.10 重構 Footer/Navbar 使用 CMS 數據
+- [x] 2.11 創建 Admin 後台頁面（CMS 編輯 + 登入）
+- [x] 2.12 重構 CRM Dashboard 接真實 API
+- [x] 2.13 重構 BookingPage 接 WhatsApp
+- [x] 2.14 配置 SPA routing（_routes.json + catch-all function）
+- [x] 2.15 配置 wrangler.toml 與 GitHub Actions
 
-## Phase 3: 驗證與審查
-- [ ] 3.1 `pnpm build` 本地構建成功
-- [ ] 3.2 `wrangler pages dev` 本地預覽 API
-- [ ] 3.3 curl 驗證 CMS / Auth / CRM / Booking API
-- [ ] 3.4 Code Review
+## Phase 3: 驗證與審查 ✅
+- [x] 3.1 `pnpm build` 本地構建成功
+- [x] 3.2 `wrangler pages dev` 本地預覽 API
+- [x] 3.3 curl 驗證 CMS / Auth / CRM / Booking API（線上）
+- [x] 3.4 記錄反模式到母機守則 Rule 40
 
-## Phase 4: 交付與部署
-- [ ] 4.1 Git commit
-- [ ] 4.2 部署到 Cloudflare Pages
-- [ ] 4.3 驗證線上 `moving.pages.dev`
-- [ ] 4.4 任務歸檔
+## Phase 4: 交付與部署 ✅
+- [x] 4.1 Git commit + push 到 https://github.com/twmeric/moving
+- [x] 4.2 部署到 Cloudflare Pages：https://moving-3vf.pages.dev
+- [x] 4.3 驗證線上 API 與頁面
+- [ ] 4.4 設置 GitHub Actions 自動部署（待 CLOUDFLARE_API_TOKEN）
+- [ ] 4.5 綁定自定義域名 moving.pages.dev（待用戶確認/操作）
