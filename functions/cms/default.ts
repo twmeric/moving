@@ -20,7 +20,7 @@ export const defaultCMSData: CMSData = {
     primaryCta: '立即預約免費上門評估',
     secondaryCta: '瀏覽專業範疇',
     backgroundImage:
-      'https://public.youware.com/users-website-assets/prod/f723e7d2-dbd0-4b58-bb0d-ff8d15522d3f/0b7c8f25f86548c58d70f853128c255d',
+      'https://pub-179cbd5da016416596e397bcd3acbd37.r2.dev/images/0b7c8f25f86548c58d70f853128c255d.jpg',
   },
   stats: [
     { value: '30+', label: '年行業經驗' },
@@ -34,7 +34,7 @@ export const defaultCMSData: CMSData = {
     description:
       '從精密醫療設備到珍貴美容儀器，我們以極致專業守護您的核心資產',
     image:
-      'https://public.youware.com/users-website-assets/prod/f723e7d2-dbd0-4b58-bb0d-ff8d15522d3f/ead74e14218b49828200ea9200aa32e4',
+      'https://pub-179cbd5da016416596e397bcd3acbd37.r2.dev/images/ead74e14218b49828200ea9200aa32e4.jpg',
     badge: '安全第一',
     features: [
       {
@@ -73,7 +73,7 @@ export const defaultCMSData: CMSData = {
         title: '醫療診所搬遷',
         subtitle: 'Medical & Clinical Relocation',
         image:
-          'https://public.youware.com/users-website-assets/prod/f723e7d2-dbd0-4b58-bb0d-ff8d15522d3f/537df38e9bf9438aab4dec654a64aa14',
+          'https://pub-179cbd5da016416596e397bcd3acbd37.r2.dev/images/537df38e9bf9438aab4dec654a64aa14.jpg',
         description:
           '專為醫療機構度身設計的搬遷方案，嚴格遵循衛生署規定及設備製造商標準，確保精密醫療儀器安全無損轉移。',
         features: [
@@ -95,7 +95,7 @@ export const defaultCMSData: CMSData = {
         title: '美容中心物流',
         subtitle: 'Beauty & Wellness Logistics',
         image:
-          'https://public.youware.com/users-website-assets/prod/f723e7d2-dbd0-4b58-bb0d-ff8d15522d3f/c7db5e35a9164419b78ba61ace04a130',
+          'https://pub-179cbd5da016416596e397bcd3acbd37.r2.dev/images/c7db5e35a9164419b78ba61ace04a130.jpg',
         description:
           '針對美容集團連鎖營運模式，提供跨分店物資調配、新店開業物流及大型醫美儀器安全運輸。',
         features: [
@@ -117,7 +117,7 @@ export const defaultCMSData: CMSData = {
         title: '教育機構搬運',
         subtitle: 'Education & Exhibition',
         image:
-          'https://public.youware.com/users-website-assets/prod/f723e7d2-dbd0-4b58-bb0d-ff8d15522d3f/3470d9f499ae425ab5854b02a9cb8c78',
+          'https://pub-179cbd5da016416596e397bcd3acbd37.r2.dev/images/3470d9f499ae425ab5854b02a9cb8c78.jpg',
         description:
           '從學校鋼琴到實驗室精密儀器，提供教育機構專屬的安全搬運方案，配合學校假期靈活排程。',
         features: [
@@ -140,7 +140,7 @@ export const defaultCMSData: CMSData = {
     title: '四步完成精密搬遷',
     description: '從預約到完工，每一步都經過嚴謹規劃',
     backgroundImage:
-      'https://public.youware.com/users-website-assets/prod/f723e7d2-dbd0-4b58-bb0d-ff8d15522d3f/61b009cda9534ca8aab1ea735b10d375',
+      'https://pub-179cbd5da016416596e397bcd3acbd37.r2.dev/images/61b009cda9534ca8aab1ea735b10d375.jpg',
     steps: [
       {
         step: '01',
