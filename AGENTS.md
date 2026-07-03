@@ -37,7 +37,19 @@ pnpm build
 pnpm pages:dev    # wrangler pages dev
 ```
 
-### 5. 母機守則關聯
+### 5. 完成後的本地整理（必做）
+
+每次任務完成後，必須整理本地 folder：
+
+- [ ] 移除模板殘留文件（如 `TO-DO.json`、過時的 `YOUWARE.md`）
+- [ ] 檢查並移除未使用的 npm 依賴
+- [ ] 更新 `.ai/RULES.md`、`.ai/MEMORY.md`、`.ai/TASKS/current.md`
+- [ ] 確保 `README.md` 與 `AGENTS.md` 反映最新狀態
+- [ ] 確認 `.gitignore` 已排除 `dist/`、`.wrangler/`、`node_modules/`、`.env`
+- [ ] 執行 `pnpm build` 確認無錯誤
+- [ ] 執行 `git status` 確認沒有未追蹤的臨時文件
+
+### 6. 母機守則關聯
 
 執行本專案前必須載入：
 

@@ -1,3 +1,15 @@
+# 御搬遷 Premier Relocations - Youware 源碼參考（歷史文件）
+
+> **注意**: 本文件為原始 Youware 模板說明。專案已大幅改造：
+> - 改用 pnpm（非 npm）
+> - 後端改為 Cloudflare Pages Functions + D1 + KV + R2
+> - CRM 已接真實 API（非 Mock Data）
+> - 部署改為 GitHub Actions → Cloudflare Pages
+>
+> 最新專案資訊請見 `README.md` 與 `AGENTS.md`。
+
+---
+
 # 御搬遷 Premier Relocations - B2B 企業搬遷官網
 
 ## 項目概述
