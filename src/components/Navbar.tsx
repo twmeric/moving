@@ -3,15 +3,12 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCMS } from '../hooks/useCMS';
-import { useAuthStore } from '../store/authStore';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const { data: cms, loading } = useCMS();
-  const { isAuthenticated } = useAuthStore();
-
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
@@ -22,11 +19,11 @@ const Navbar: React.FC = () => {
     setIsOpen(false);
   }, [location]);
 
+  // 管理後台 (/admin, /crm) 不顯示在公開導航，需直接輸入網址進入
   const navLinks = [
     { href: '/', label: '首頁' },
     { href: '/services', label: '專業範疇' },
     { href: '/booking', label: '預約評估' },
-    { href: isAuthenticated ? '/admin' : '/login', label: '管理後台' },
   ];
 
   if (loading || !cms) return null;
