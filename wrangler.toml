@@ -1,0 +1,14 @@
+name = "moving"
+compatibility_date = "2026-07-03"
+pages_build_output_dir = "dist"
+
+# D1 Database for CRM and bookings
+[[d1_databases]]
+binding = "DB"
+database_name = "moving-db"
+database_id = "fab0ebd2-eeeb-43a0-8f23-0b748e691c1d"
+
+# KV Namespace for CMS content
+[[kv_namespaces]]
+binding = "CMS_KV"
+id = "bd2d2db734d64ae2ba731c1aeeb1bf84"

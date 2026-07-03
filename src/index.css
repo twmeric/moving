@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream-50 text-navy-900 font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-amber-400 to-orange-500 text-navy-900 font-bold text-sm tracking-wider uppercase rounded-none border-0 transition-all duration-300 hover:from-amber-300 hover:to-orange-400 shadow-lg shadow-amber-500/20;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-transparent text-white font-semibold text-sm tracking-wider uppercase border-2 border-white rounded-none transition-all duration-300 hover:bg-white hover:text-navy-900;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-transparent text-navy-900 font-semibold text-sm tracking-wider uppercase border-2 border-navy-900 rounded-none transition-all duration-300 hover:bg-navy-900 hover:text-white;
+  }
+
+  .section-padding {
+    @apply px-6 py-20 md:px-12 lg:px-24 lg:py-32;
+  }
+
+  .card-elegant {
+    @apply bg-white border border-cream-300 p-8 transition-all duration-500 hover:shadow-xl hover:border-gold-400/30;
+  }
+
+  .gold-divider {
+    @apply w-16 h-1 bg-gradient-to-r from-amber-400 to-orange-500;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-amber-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
